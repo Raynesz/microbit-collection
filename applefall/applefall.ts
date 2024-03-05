@@ -65,7 +65,13 @@ let playerX = 0
 let finishSoundPlayed = false;
 let apples: any[] = []
 playerX = 2
-basic.showIcon(IconNames.Diamond)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    # . . . #
+    . . . . .
+    . . . . .
+    `)
 class Apple {
     constructor(public x: number, public y: number, public caught: boolean, public missed: boolean) {}
 }
